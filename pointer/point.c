@@ -11,7 +11,7 @@ int main() {
       printf("%d\n",x);
       printf("%d\n",*p);
       printf("%d\n",*p2);
-      
+      printf("hello");
 
    return 0;
 }
