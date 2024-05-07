@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+#include<string.h>
 #define MAX_SIZE 100 
 
 int main()
@@ -26,6 +27,8 @@ int main()
         i++;
         j++;
     }
+    strcpy(str1,str2);
+    printf("Concatenated string = %s\n", str1);
 
     str1[i] = '\0';
 
