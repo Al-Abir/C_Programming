@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int sum(int n, int i, int a) {
+int sum(int n) {
     // base case
-    if (i > n) {
-        return a;
+    if (n==0) {
+        return 0;
     }
     else {
-        a += i;
-        return sum(n, i + 1, a);
+    
+        return ((n%10)+sum(n/10));
     }
 }
 
@@ -15,7 +15,7 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    int result = sum(n, 0, 0);
+    int result = sum(n);
     printf("Total sum: %d\n", result);
 
     return 0;

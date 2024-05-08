@@ -5,8 +5,7 @@ long long int summation(long long int arr[], int n, int i) {
     if (i == n)
         return 0;
       
-    long long int s = summation(arr, n, i + 1);
-    return s + arr[i];
+   return arr[i] + summation(arr, n, i + 1);
 }
 
 int main() {
