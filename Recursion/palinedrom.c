@@ -14,8 +14,8 @@ int main() {
     char a[100];
 
 
-    fgets(a, sizeof(a), stdin);
-    a[strcspn(a, "\n")] = '\0'; 
+    fgets(a, 100, stdin);
+   a[strcspn(a, "\n")] = '\0'; 
 
     bool is_palindrome = isPalindrome(a, 0, strlen(a) - 1);
 
