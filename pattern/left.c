@@ -1,18 +1,23 @@
-#include <stdio.h>
+// C program to print the full pyramid pattern of stars 
+#include <stdio.h> 
 
-int main() {
-    int n;
-    scanf("%d", &n);
+int main() 
+{ 
+	int rows = 5; 
 
-    for (int i = 0; i <n; i++) {
-        for (int j = 0; j <n-i-1; j++) {
-            printf(" ");     
-       }
-       for(int k =0; k<=i; k++){
-            printf("%d",k+1);
-       }
-       printf("\n");
-    }
-    return 0;
+	// first loop to print all rows 
+	for (int i = 0; i < rows; i++) { 
+
+		// inner loop 1 to print white spaces 
+		for (int j = 0; j <2*(rows-i)-1; j++) { 
+			printf("1"); 
+		} 
+
+		// inner loop 2 to print star * character 
+		for (int k = 0; k < 2 * i + 1; k++) { 
+			printf("* "); 
+		} 
+		printf("\n"); 
+	} 
+	return 0; 
 }
-
